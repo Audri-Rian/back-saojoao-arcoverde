@@ -1,0 +1,28 @@
+{
+  "name": "back-saojoao-arcoverde",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --test test/**/*.test.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^6.3.1",
+    "@fastify/sensible": "^6.0.0",
+    "fastify": "^5.8.5",
+    "fastify-plugin": "^5.1.0",
+    "firebase-admin": "^13.10.0"
+  },
+  "devDependencies": {
+    "fastify-cli": "^8.0.0",
+    "nodemon": "^3.1.14"
+  }
+}
