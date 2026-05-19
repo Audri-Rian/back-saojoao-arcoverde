@@ -1,13 +1,15 @@
 'use strict'
 
 const Fastify = require('fastify')
-const app = require('./app')
+const app = require('./src/app')
 
 const fastify = Fastify({
     logger: true
 })
 
-fastify.register(app)
+fastify.register(
+    require('./src/app')
+)
 
 const start = async () => {
     try {

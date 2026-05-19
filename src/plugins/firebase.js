@@ -3,7 +3,7 @@
 const fp = require('fastify-plugin')
 const admin = require('firebase-admin')
 
-const serviceAccount = require('../firebase-service-account.json')
+const serviceAccount = require('../../firebase-service-account.json')
 
 async function firebasePlugin(fastify, options) {
 
