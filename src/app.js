@@ -15,7 +15,6 @@ module.exports = async function (fastify, opts) {
     dir: path.join(__dirname, 'plugins'),
     options: Object.assign({}, opts)
   })
-
   fastify.register(
       require('./plugins/error-handler')
   )
