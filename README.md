@@ -4,7 +4,7 @@
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
-Uma API RESTful robusta desenvolvida com **Fastify** e **Firebase/Firestore**, projetada para servir como o back-end principal do aplicativo oficial do São João de Arcoverde. Este sistema permite gerenciar toda a programação, atrações, pontos de interesse, patrocinadores e categorias da maior e mais tradicional festa de rua da cidade.
+Uma API RESTful desenvolvida com **Fastify** e **Firebase/Firestore**, projetada para servir como o back-end principal do aplicativo oficial do São João de Arcoverde. Este sistema permite gerenciar toda a programação, atrações, pontos de interesse, patrocinadores e categorias da maior e mais tradicional festa de rua da cidade.
 
 ---
 
@@ -55,13 +55,6 @@ Acesse a rota de documentação em:
 👉 **[http://localhost:3000/docs](http://localhost:3000/docs)**
 
 Lá você encontrará os schemas de todas as entidades, exemplos de request/response e detalhes do funcionamento de todas as rotas de gerenciamento (`GET`, `POST`, `PUT`, `DELETE`).
-
-## 🧪 Rodando os Testes
-
-Para garantir que os recursos estão operando corretamente e validar regressões:
-```bash
-npm test
-```
 
 ## 🛠️ Tecnologias Utilizadas
 - **Fastify**: Servidor web rápido e de baixo overhead.
