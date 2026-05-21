@@ -3,7 +3,7 @@ const CategoryRepository = require('../repository/category.repository')
 const CategoryController = require('../controller/category.controller')
 const CategoryService = require('../service/category.service')
 
-module.exports = async function(fastify,opts){
+module.exports = async function(fastify){
     const repository = new CategoryRepository(fastify.firebase.db)
     const service = new CategoryService(repository)
     const controller = new CategoryController(service)

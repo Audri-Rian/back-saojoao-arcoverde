@@ -5,7 +5,7 @@ const admin = require('firebase-admin')
 
 const serviceAccount = require('../../firebase-service-account.json')
 
-async function firebasePlugin(fastify, options) {
+async function firebasePlugin(fastify) {
 
     if (!admin.apps.length) {
 

@@ -1,14 +1,27 @@
 'use strict'
 
-module.exports = async function (fastify,opts){
+module.exports = async function (fastify) {
 
-    fastify.setErrorHandler((error, request, reply) => {
+    fastify.setErrorHandler(
+        (error, request, reply) => {
 
-        const statusCode = error.statusCode || 500
-        const message = error.message
-        return reply.status(statusCode).send({
-            error:error.message,
-            message
-        })
-    })
+            fastify.log.error(error)
+
+            return reply
+                .status(error.statusCode || 500)
+                .send({
+
+                    statusCode:
+                        error.statusCode || 500,
+
+                    error:
+                        error.name ||
+                        'Internal Server Error',
+
+                    message:
+                        error.message ||
+                        'Unexpected error'
+                })
+        }
+    )
 }

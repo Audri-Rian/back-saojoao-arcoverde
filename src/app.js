@@ -25,9 +25,31 @@ module.exports = async function (fastify, opts) {
         prefix: '/categories'
       }
   )
+    fastify.register(
+        require('./modules/events/routes/event.routes'),
+        {
+            prefix: '/events'
+        }
+    )
+    fastify.register(
+        require('./modules/artists/routes/artist.routes'),
+        {
+            prefix: '/artists'
+        }
+    )
 
-
-
+    fastify.register(
+        require('./modules/pois/routes/poi.routes'),
+        {
+            prefix: '/pois'
+        }
+    )
+    fastify.register(
+        require('./modules/sponsor/routes/sponsor.routes'),
+        {
+            prefix: '/sponsors'
+        }
+    )
 
 }
 

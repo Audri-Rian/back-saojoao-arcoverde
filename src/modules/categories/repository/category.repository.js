@@ -17,7 +17,6 @@ class CategoryRepository{
             id: docRef.id,
             active: true
         }
-        console.log('DOC REF ID:', docRef.id)
     }
     async findAll(){
         const snapshot = await this.collection.where('active', '==', true).get()

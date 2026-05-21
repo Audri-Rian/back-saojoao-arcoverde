@@ -14,7 +14,6 @@ class CategoryService{
         const category = new Category({
             name: dto.name,
             created_at: new Date().toISOString(),
-            updated_at: null,
             active: true
         })
         const existingCategory = await this.repository.findByName(dto.name)
@@ -23,7 +22,6 @@ class CategoryService{
         }
         const savedCategory = await this.repository.create(category)
         return CategoryResponseDto(savedCategory)
-        console.log(savedCategory)
     }
     async findAll(){
         const categories =  await this.repository.findAll()

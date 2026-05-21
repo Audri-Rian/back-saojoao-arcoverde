@@ -6,7 +6,7 @@ const assert = require('node:assert')
 const Fastify = require('fastify')
 const Support = require('../../src/plugins/support')
 
-test('support works standalone', async (t) => {
+test('support works standalone', async () => {
   const fastify = Fastify()
   fastify.register(Support)
 
